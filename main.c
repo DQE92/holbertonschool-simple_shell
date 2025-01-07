@@ -14,7 +14,8 @@ char *program_name;
 	size_t len = 0;
 	ssize_t nread;
 
-	char *program_name = argv[0];
+	program_name = argv[0];
+	(void)argc;
 
 	while (1)
 	{
@@ -26,14 +27,14 @@ char *program_name;
 	if (nread == -1)
 	{
 	if (isatty(STDIN_FILENO))
-	write(STDOUT_FILENO, "\n", 1); /* Pour bien afficher EOF */
+	write(STDOUT_FILENO, "\n", 1);
 	break;
 	}
 
 	if (nread > 0 && line[nread - 1] == '\n')
 	line[nread - 1] = '\0';
 
-	if (strlen(line) == 0) /* Ignorer les commandes vides */
+	if (strlen(line) == 0)
 	continue;
 
 	if (strcmp(line, "exit") == 0)
