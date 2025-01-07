@@ -24,7 +24,8 @@ void execute_command(char *command, char *program_name)
 	{
 		if (execve(command, args, environ) == -1)
 		{
-			fprintf(stderr, "%s: 1: %s: not found\n", program_name, command);
+			/* fprintf(stderr, "%s: 1: %s: not found\n", program_name, command); */
+			fprintf(stderr, "%s: No such file or directory\n", program_name);
 			exit(127); /* Commande introuvable */
 		}
 	}
