@@ -3,10 +3,10 @@
 /**
  * execute_command - Execute a command via execve
  * @command: command to execute
+ * @program_name: program name
  */
-void execute_command(char *command)
+void execute_command(char *command, char *program_name)
 {
-	extern char **environ;
 	pid_t pid;
 	int status;
 	char *args[2];

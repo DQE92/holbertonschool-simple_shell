@@ -10,8 +10,8 @@
 #include <errno.h>
 
 void show_prompt(void);
-void execute_command(char *command);
+void execute_command(char *command, char *program_name);
 
-extern char *program_name;
+extern char **environ;
 
 #endif
