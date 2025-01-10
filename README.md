@@ -19,11 +19,12 @@ We are Camille and Dylan, students of Holberton School.
 ## Installation
 
 - Clone repository
-HTTPS: 
+
+HTTPS:
 ```bash
 git clone https://github.com/DQE92/holbertonschool-simple_shell.git
 ```
-SSH: 
+SSH:
 ```bash
 git clone git@github.com:DQE92/holbertonschool-simple_shell.git
 ```
