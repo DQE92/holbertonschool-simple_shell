@@ -53,11 +53,8 @@ env - Displays all the environment variables with their values
 exit - To logout of the shell.
 
 .SH BUGS
-
+If there is a bug, report to camilledct28@gmail.com and duquedylan@icloud.com.
 
 
 .SH AUTHOR(S)
-
-Ducatte Camille and Duque Dylan
-
-
+DUCATTE Camille and DUQUE Dylan from Holberton School Paris.
